@@ -1,0 +1,87 @@
+ramim@ramimpi ~> mkdir enerzyz-dashboard
+ramim@ramimpi ~> cd enerzyz-dashboard
+ramim@ramimpi ~/enerzyz-dashboard>
+git clone https://github.com/Enerzyz/enerzyz-dashboard.git
+Cloning into 'enerzyz-dashboard'...
+remote: Enumerating objects: 581439, done.
+remote: Counting objects: 100% (243/243), done.
+remote: Compressing objects: 100% (203/203), done.
+remote: Total 581439 (delta 83), reused 86 (delta 29), pack-reused 581196
+Receiving objects: 100% (581439/581439), 504.69 MiB | 863.00 KiB/s, done.
+Resolving deltas: 100% (401326/401326), done.
+Updating files: 100% (12908/12908), done.
+ramim@ramimpi ~/enerzyz-dashboard> go run build.go setup
+stat build.go: no such file or directory
+ramim@ramimpi ~/enerzyz-dashboard [1]> ls
+enerzyz-dashboard/
+ramim@ramimpi ~/enerzyz-dashboard> cd enerzyz-dashboard
+ramim@ramimpi ~/e/enerzyz-dashboard (main)> go run build.go setup
+
+
+
+
+go run build.go build
+^C^C^C^C⏎                                                                                    ramim@ramimpi ~/e/enerzyz-dashboard (main) [SIGINT]> go run build.go setup
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go run build.go build
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> ./bin/grafana-server web
+fish: Unknown command: ./bin/grafana-server
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [127]> go mod tidy
+go mod tidy: go.mod file indicates go 1.20, but maximum supported version is 1.15
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get github.com/gobuffalo/pop/v5@v5.3.1
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get github.com/mattn/go-sqlite3@v1.14.6
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get github.com/mattn/go-sqlite3@v1.14.6
+go: downloading github.com/mattn/go-sqlite3 v1.14.6
+go: downloading github.com/mattn/go-sqlite3 v2.0.3+incompatible
+
+
+
+
+^C⏎                                                                                          ramim@ramimpi ~/e/enerzyz-dashboard (main) [SIGINT]>
+go get github.com/mattn/go-sqlite3@v1.14.6
+ramim@ramimpi ~/e/enerzyz-dashboard (main)> go get github.com/mattn/go-sqlite3
+go: downloading github.com/mattn/go-sqlite3 v1.14.17
+go: github.com/mattn/go-sqlite3 upgrade => v1.14.17
+# github.com/mattn/go-sqlite3
+../../go/pkg/mod/github.com/mattn/go-sqlite3@v1.14.17/sqlite3_opt_serialize.go:41:26: undefined: math.MaxInt
+note: module requires Go 1.16
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [2]> 0;fish /home/ramim/enerzyz-dashboard/enerzyz-dashboarderzyz-dashboard/enerzyramramimramimrramim@ramimpi ~/e/enerzyz-dashboard (main) [2]> sqlite --version
+fish: Unknown command: sqlite
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [127]> sqlite3 --v
+fish: Unknown command: sqlite3
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [127]> go get github.com/mattn/go-sqlite3@v1.14.6
+ramim@ramimpi ~/e/enerzyz-dashboard (main)> go run build.go setup
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get -u
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get -u
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go mod vendor
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get github.com/mattn/go-sqlite3@v1.14.16
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go clean -modcache
+ramim@ramimpi ~/e/enerzyz-dashboard (main)> go get github.com/mattn/go-sqlite3@v1.14.16
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go run build.go setup
+go: github.com/ory/x@v0.0.214 requires
+        github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go clean -modcache
+ramim@ramimpi ~/e/enerzyz-dashboard (main)> go run build.go setup
+go: github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]> go get github.com/gobuffalo/pop/v5@v5.3.1
+go: github.com/gobuffalo/pop/v5@v5.3.1: github.com/gobuffalo/pop/v5(v5.3.1) depends on excluded github.com/mattn/go-sqlite3(v2.0.3+incompatible) with no newer version available
+ramim@ramimpi ~/e/enerzyz-dashboard (main) [1]>
